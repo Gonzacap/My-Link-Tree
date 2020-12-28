@@ -1,0 +1,93 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  color: #383428;
+}
+
+body {
+  background-color: #AED6F1;
+  overflow: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.avatar {
+  margin-bottom: 10px;
+  width: 90%;
+  overflow: hidden;
+  /*background-color: red;*/
+}
+
+.avatar ul{
+  display: flex;
+  justify-content: center;
+  width: 200%;
+  padding: 0;
+  /*background-color: yellow;*/
+
+  animation: cambio 5s infinite alternate;
+}
+
+.avatar li{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 1px solid grey;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+.btn-group a {}
+
+.btn-group .btn {
+  background-color: whitesmoke;
+  color: grey;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: #383428;
+}
+
+footer {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 10px;
+  line-height: 1.4rem;
+}
+
+@keyframes cambio{
+
+  0% { margin-left: 0; }
+  40% { margin-left: 0; }
+  60% { margin-left: -100%; }
+  100% { margin-left: -100%; }
+
+}
